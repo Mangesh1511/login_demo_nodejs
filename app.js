@@ -76,7 +76,7 @@ app.post('/login', (req, res) => {
     Users.find({ email: `${email}`, password: `${pass}` }, (err, data) => {
         if (!err) {
             if (data==null||data.length == 0) {
-                res.send('Please Enter the correct credentials or register with us if not registered!');
+                res.render('login',{alert_msg:'Please Enter the correct credentials or register with us if not registered!'});
             }
             else 
                 res.render('home');
