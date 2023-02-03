@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 mongoose.set('strictQuery',true);
-mongoose.connect("mongodb://127.0.0.1:27017/RegistrationApi",(err)=>
+mongoose.connect("mongodb+srv://Mangesh:root@cluster0.cdcvq5k.mongodb.net/RegistrationApi",(err)=>
 {
     if(!err)
         console.log("Mongodb Connection Succeeded...");
